@@ -77,6 +77,13 @@
         .footer{ color: #000000;}
         
         /* MEDIA QUERIES START*/
+        @media only screen and (max-device-width: 589px) {
+            td[id=fullOnlineLink1]{display: none !important;}
+            td[id=fullOnlineLink2]{display: none !important;}
+            td[id=onlineLink]{display: inline-block !important;}
+            .grid-container {display: grid !important; grid-template-columns: auto ; grid-gap: 0px;}
+            .grid-container > div {background-color: #000000;text-align: center;}
+        }
         /* MEDIA QUERIES END*/
     /* <!-- CUSTOM STYLES END --> */
     </style>
@@ -93,20 +100,41 @@
 
             <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation" style="min-width: 100%;" bgcolor="#ffffff">
                 <tr>
-                    <td valign="top" class="bg-black" style="padding: 0em 2.5em; background-color: #000000; display: inline-block">
+                    <td valign="top" class="bg-black" style="padding: 0em 2.5em; background-color: #000000;">
                         <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation">
                             <tr>
-                                <td valign="top" class="bg-black" align="left" style="padding: 0; background-color: #000000;">
+
+                                
+                                <td style="display: none; padding: 10px 0 0 5px 0" valign="top" id="onlineLink" width=100%>
+                                    <div class="grid-container" align="center">
+                                        <div class="item1" valign="top" class="bg-black" align="center" style="padding: 0; background-color: #000000; line-height: 15px;">
+                                            <a href="#" style="font-size: 8px; color: #ffffff; letter-spacing: 2px; ">
+                                                THE PLAN TO SAVE AFRICA'S GREATEST GIANTS
+                                            </a>
+                                        </div>
+                                        <div class="item2" valign="top" class="bg-black" align="center" style="padding: 0; background-color: #000000; line-height: 15px;">
+                                            <a href="#" style="font-size: 8px; color: #ffffff; letter-spacing: 2px;">
+                                                VIEW ONLINE
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </td>
+
+
+                                <td valign="middle" class="bg-black" align="left" style="padding: 0; background-color: #000000;" id="fullOnlineLink1">
                                     <a href="#" style="font-size: 8px; color: #ffffff; letter-spacing: 2px;">
                                         THE PLAN TO SAVE AFRICA'S GREATEST GIANTS
                                     </a>
                                 </td>
                             
-                                <td valign="top" class="bg-black" align="right" style="padding: 0; background-color: #000000;">
+                                <td valign="middle" class="bg-black" align="right" style="padding: 0; background-color: #000000;" id="fullOnlineLink2">
                                     <a href="" style="font-size: 8px; color: #ffffff; letter-spacing: 2px;">
                                         VIEW ONLINE
                                     </a>
                                 </td>
+
+
                             </tr>
                         </table>
                     </td>
