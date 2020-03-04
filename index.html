@@ -77,12 +77,30 @@
         .footer{ color: #000000;}
         
         /* MEDIA QUERIES START*/
+        @media only screen and (max-device-width: 646px) {
+            table[id=endangeredLinks]{width: 100% !important;}
+        }
+        
         @media only screen and (max-device-width: 589px) {
             td[id=fullOnlineLink1]{display: none !important;}
             td[id=fullOnlineLink2]{display: none !important;}
             td[id=onlineLink]{display: inline-block !important;}
             .grid-container {display: grid !important; grid-template-columns: auto ; grid-gap: 0px;}
             .grid-container > div {background-color: #000000;text-align: center;}
+        }
+
+        @media only screen and (max-device-width: 410px) {
+            td[id=endangeredLinksContainer]{padding: 0em 1em !important;}
+        }
+
+        @media only screen and (max-device-width: 365px) {
+            td[id=endangeredLinksContainer]{padding: 0em 0em !important;}
+            table[id=endangeredSarah] h2{font-size: 18px !important;}
+            table[id=endangeredTimes] a{font-size: 12px !important;}
+        }
+
+        @media only screen and (max-device-width: 332px) {
+            td[id=onlineLink] a{font-size: 6px !important;}
         }
         /* MEDIA QUERIES END*/
     /* <!-- CUSTOM STYLES END --> */
@@ -290,11 +308,11 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td valign="top" class="bg-white" style="padding: 1em 2.5em 0 2.5em; background-color: #ffffff; display: inline-block">
-                                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="90%" role="presentation" >
+                                <td valign="top" class="bg-white" style="padding: 1em 2.5em 0 2.5em; background-color: #ffffff; display: inline-block" id="endangeredLinksContainer">
+                                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="90%" role="presentation" id="endangeredLinks">
                                         <tr>
                                             <td width="55%">
-                                                <table align="right" border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation" >
+                                                <table align="right" border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation" id="endangeredSarah">
                                                     <tr>
                                                 
                                                         <td valign="middle" class="bg-white" align="right" style="padding: 0 1em 0 0em;  background-color: #ffffff;">
@@ -310,7 +328,7 @@
                                             </td>
 
                                             <td style="border-left: 2px solid #FFCC01 !important;" width="45%">
-                                                <table align="right" border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation">
+                                                <table align="right" border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation" id="endangeredTimes">
                                                     <tr>
                                         
                                                         <td valign="top" class="bg-white" align="left" style="padding: 0 0em 0 1em; background-color: #ffffff; line-height: 20px;" >
